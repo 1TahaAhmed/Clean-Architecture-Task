@@ -18,16 +18,18 @@ public class Product
     public void SetName(string name)
     {
         if (string.IsNullOrWhiteSpace(name))
+        {
             throw new ArgumentException("Product name cannot be empty.", nameof(name));
-
+        }
         Name = name;
     }
 
     public void SetPrice(decimal price)
     {
         if (price <= 0)
+        {
             throw new ArgumentException("Price must be greater than zero.", nameof(price));
-
+        }
         Price = price;
     }
 }
