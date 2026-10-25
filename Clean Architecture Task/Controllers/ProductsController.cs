@@ -16,6 +16,7 @@ public class ProductsController : ControllerBase
     public ProductsController(ISender mediator, ILogger<ProductsController> logger)
     {
         _logger = logger;
+
         _mediator = mediator;
     }
 
