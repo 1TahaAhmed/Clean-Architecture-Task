@@ -179,3 +179,13 @@ C:\Users\Doctor_PC\source\repos\C#Fundamentals\ADO.NET\ADOD2\Clean Architecture 
 C:\Users\Doctor_PC\source\repos\C#Fundamentals\ADO.NET\ADOD2\Clean Architecture Task\Clean Architecture Task\obj\Debug\net10.0\ref\Clean Architecture Task.dll
 C:\Users\Doctor_PC\source\repos\C#Fundamentals\ADO.NET\ADOD2\Clean Architecture Task\Clean Architecture Task\bin\Debug\net10.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\Doctor_PC\source\repos\C#Fundamentals\ADO.NET\ADOD2\Clean Architecture Task\Clean Architecture Task\bin\Debug\net10.0\runtimes\win\lib\net10.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Doctor_PC\source\repos\C#Fundamentals\ADO.NET\ADOD2\Clean Architecture Task\Clean Architecture Task\bin\Debug\net10.0\Serilog.dll
+C:\Users\Doctor_PC\source\repos\C#Fundamentals\ADO.NET\ADOD2\Clean Architecture Task\Clean Architecture Task\bin\Debug\net10.0\Serilog.AspNetCore.dll
+C:\Users\Doctor_PC\source\repos\C#Fundamentals\ADO.NET\ADOD2\Clean Architecture Task\Clean Architecture Task\bin\Debug\net10.0\Serilog.Extensions.Hosting.dll
+C:\Users\Doctor_PC\source\repos\C#Fundamentals\ADO.NET\ADOD2\Clean Architecture Task\Clean Architecture Task\bin\Debug\net10.0\Serilog.Extensions.Logging.dll
+C:\Users\Doctor_PC\source\repos\C#Fundamentals\ADO.NET\ADOD2\Clean Architecture Task\Clean Architecture Task\bin\Debug\net10.0\Serilog.Formatting.Compact.dll
+C:\Users\Doctor_PC\source\repos\C#Fundamentals\ADO.NET\ADOD2\Clean Architecture Task\Clean Architecture Task\bin\Debug\net10.0\Serilog.Settings.Configuration.dll
+C:\Users\Doctor_PC\source\repos\C#Fundamentals\ADO.NET\ADOD2\Clean Architecture Task\Clean Architecture Task\bin\Debug\net10.0\Serilog.Sinks.Console.dll
+C:\Users\Doctor_PC\source\repos\C#Fundamentals\ADO.NET\ADOD2\Clean Architecture Task\Clean Architecture Task\bin\Debug\net10.0\Serilog.Sinks.Debug.dll
+C:\Users\Doctor_PC\source\repos\C#Fundamentals\ADO.NET\ADOD2\Clean Architecture Task\Clean Architecture Task\bin\Debug\net10.0\Serilog.Sinks.File.dll
+C:\Users\Doctor_PC\source\repos\C#Fundamentals\ADO.NET\ADOD2\Clean Architecture Task\Clean Architecture Task\obj\Debug\net10.0\Clean Architecture Task.sourcelink.json

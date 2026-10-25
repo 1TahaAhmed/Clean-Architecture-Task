@@ -12,15 +12,18 @@ namespace ProductCatalog.Api.Controllers;
 public class ProductsController : ControllerBase
 {
     private readonly ISender _mediator;
-
-    public ProductsController(ISender mediator)
+    private readonly ILogger<ProductsController> _logger;
+    public ProductsController(ISender mediator, ILogger<ProductsController> logger)
     {
+        _logger = logger;
         _mediator = mediator;
     }
 
     [HttpGet]
     public async Task<ActionResult<IEnumerable<ProductDto>>> GetAll(CancellationToken cancellationToken)
     {
+        _logger.LogInformation("Fetching all products at {Time}", DateTime.UtcNow);
+
         var result = await _mediator.Send(new GetProductsQuery(), cancellationToken);
         return Ok(result);
     }

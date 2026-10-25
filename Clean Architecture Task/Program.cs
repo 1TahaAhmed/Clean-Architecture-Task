@@ -5,8 +5,14 @@ using ProductCatalog.Application.Common.Interfaces;
 using ProductCatalog.Application.Features.Products.Commands.CreateProduct;
 using ProductCatalog.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
-
+using Serilog;
 var builder = WebApplication.CreateBuilder(args);
+
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .CreateLogger();
+
+builder.Host.UseSerilog();
 
 builder.Services.AddControllers();
 builder.Services.AddFluentValidationAutoValidation();
@@ -26,6 +32,8 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+app.UseSerilogRequestLogging();
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -36,4 +44,17 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
+try
+{
+    Log.Information("Starting web application");
+    app.Run();
+}
+catch(Exception ex)
+{
+    Log.Fatal(ex, "Application terminated unexpectedly");
+}
+finally
+{
+    Log.CloseAndFlush();
+}
 app.Run();
